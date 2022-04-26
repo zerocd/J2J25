@@ -1,0 +1,263 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\J2J25.rc2""  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.\r\n"
+    "#include ""afxres.rc""     // 표준 구성 요소입니다.\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\J2J25.ico"
+IDI_ICON1               ICON                    "res\\icon1.ico"
+IDI_ICON2               ICON                    "res\\icon2.ico"
+IDI_ICON3               ICON                    "res\\icon3.ico"
+IDI_ICON4               ICON                    "res\\icon4.ico"
+IDI_ICON5               ICON                    "res\\icon5.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_J2J25_DIALOG DIALOGEX 0, 0, 436, 313
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "J2J25"
+FONT 9, "MS 셸 대화 상자", 0, 0, 0x1
+BEGIN
+    CONTROL         "변조하기",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,149,18,48,10
+    CONTROL         "복원하기",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,203,18,48,10
+    CONTROL         "검사하기",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,257,18,48,10
+    CONTROL         "원본 덮어쓰기",IDC_CHECK1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,336,246,90,10
+    CONTROL         "같은 폴더에 출력하기",IDC_CHECK2,"Button",BS_AUTORADIOBUTTON,336,258,90,10
+    EDITTEXT        IDC_EDIT3,6,16,122,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,48,252,284,14,ES_AUTOHSCROLL | ES_READONLY,WS_EX_ACCEPTFILES
+    DEFPUSHBUTTON   "시작",IDOK,310,14,50,16
+    PUSHBUTTON      "닫기",IDCANCEL,192,290,50,16
+    LTEXT           "비밀번호",IDC_STATIC,6,6,33,8
+    LTEXT           "작업 파일(추가는 드랙&&드롭)",IDC_STATIC,6,42,102,8
+    GROUPBOX        "작업종류",IDC_STATIC,143,6,228,30
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,42,276,387,6
+    PUSHBUTTON      "도움말",ID_HELP,368,295,34,11
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,6,54,426,186,WS_EX_ACCEPTFILES
+    PUSHBUTTON      "전체",ID_CLEARLISTALL,395,42,34,11
+    PUSHBUTTON      "성공한 것만",ID_CLEARLISTSUCCESS,341,42,46,11
+    LTEXT           "목록 삭제",IDC_STATIC,299,42,36,8
+    LTEXT           "123/123",IDC_STATIC_COUNT,6,276,30,8
+    PUSHBUTTON      "추가",IDC_BUTTON_ADD_TARGET,109,40,50,12
+    PUSHBUTTON      "출력경로",IDC_BUTTON_PATH,7,252,38,14
+    PUSHBUTTON      "환경설정",IDC_BUTTON_SET,385,15,44,16
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 319, 174
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "J2J25 도움말"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,134,153,50,14
+    EDITTEXT        IDC_EDIT1,7,7,305,140,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 220, 6
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,1,0,216,6
+END
+
+IDD_DIALOG_SET DIALOGEX 0, 0, 186, 46
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "환경설정"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,67,25,50,14
+    LTEXT           "변조확장자(.없이)",IDC_STATIC,7,8,65,8
+    EDITTEXT        IDC_EDIT1,78,6,101,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,1,4
+ PRODUCTVERSION 1,0,1,4
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x21L
+#else
+ FILEFLAGS 0x20L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "CompanyName", "J2J25"
+            VALUE "FileDescription", "J2J25"
+            VALUE "FileVersion", "1.0.1.4"
+            VALUE "InternalName", "J2J25.exe"
+            VALUE "LegalCopyright", "J2J25.  All rights reserved."
+            VALUE "OriginalFilename", "J2J25.exe"
+            VALUE "ProductName", "J2J25"
+            VALUE "ProductVersion", "1.0.1.4"
+            VALUE "SpecialBuild", "00009"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_J2J25_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 429
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 306
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+    END
+
+    IDD_DIALOG_SET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SORTDOWN            BITMAP                  "res\\SORTDOWN.bmp"
+IDB_SORTUP              BITMAP                  "res\\SORTUP.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "목록에서 제거",                     ID_MENU_REMOVE
+        MENUITEM "오류무시하고 복원",                   ID_MENU_FORCE
+    END
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\J2J25.rc2"  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.
+#include "afxres.rc"     // 표준 구성 요소입니다.
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
